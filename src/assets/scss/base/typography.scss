@@ -1,0 +1,83 @@
+html {
+  font-size: 70%;
+}
+
+@font-face {
+  font-family: VazirFarsiDigit;
+  src: url($font_path+"/Vazir-Thin-FD-WOL.eot");
+  src: url($font_path+"/Vazir-Thin-FD-WOL.woff2") format("woff2"),
+    url($font_path+"/Vazir-Thin-FD-WOL.woff") format("woff"),
+    url($font_path+"/Vazir-Thin-FD-WOL.ttf") format("truetype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: VazirFarsiDigit;
+  src: url($font_path+"/Vazir-Light-FD-WOL.eot");
+  src: url($font_path+"/Vazir-Light-FD-WOL.woff2") format("woff2"),
+    url($font_path+"/Vazir-Light-FD-WOL.woff") format("woff"),
+    url($font_path+"/Vazir-Light-FD-WOL.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: VazirFarsiDigit;
+  src: url($font_path+"/Vazir-Medium-FD-WOL.eot");
+  src: url($font_path+"/Vazir-Medium-FD-WOL.woff2") format("woff2"),
+    url($font_path+"/Vazir-Medium-FD-WOL.woff") format("woff"),
+    url($font_path+"/Vazir-Medium-FD-WOL.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: VazirFarsiDigit;
+  src: url($font_path+"/Vazir-Bold-FD-WOL.eot");
+  src: url($font_path+"/Vazir-Bold-FD-WOL.woff2") format("woff2"),
+    url($font_path+"/Vazir-Bold-FD-WOL.woff") format("woff"),
+    url($font_path+"/Vazir-Bold-FD-WOL.ttf") format("truetype");
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-grey-dark-3;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
+.title--primary {
+  background-image: linear-gradient(
+    to right,
+    var(--v-secondary-base),
+    var(--v-primary-base)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

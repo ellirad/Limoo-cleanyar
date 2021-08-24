@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  vue_web1:
+    build: 
+      context: ..
+      dockerfile: vue_deploy/Dockerfile
+    image: vue_img
+    container_name: vue_web1
+    restart: always
+    ports:
+            - "127.0.0.1:3335:80"
+
+networks:
+  default:
+    external:
+      name: main_net
+
